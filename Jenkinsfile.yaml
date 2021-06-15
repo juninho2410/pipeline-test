@@ -1,8 +1,7 @@
 pipeline:
-    agent: any
-    stages:
-        - stage: First Step
-          steps:
-              - echo "My First step"
-              - ls -lah
-
+ agent: any
+ stages:
+   - stage: Checkout step
+     steps:
+       - git 'https://github.com/juninho2410/pipeline-test.git'
+         branch 'main'
