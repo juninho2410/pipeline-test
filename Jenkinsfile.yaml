@@ -1,0 +1,8 @@
+pipeline:
+    agent: any
+    stages:
+        - stage: First Step
+          steps:
+              - echo "My First step"
+              - ls -lah
+
